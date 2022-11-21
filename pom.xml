@@ -34,21 +34,8 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.6.12</version>
-			<exclusions>
-				<exclusion>
-					<groupId>io.github.classgraph</groupId>
-					<artifactId>classgraph</artifactId>
-				</exclusion>
-			</exclusions>
+			<version>1.6.13</version>
 		</dependency>
-
-		<dependency>
-			<groupId>io.github.classgraph</groupId>
-			<artifactId>classgraph</artifactId>
-			<version>4.8.70</version>
-		</dependency>
-
 
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -70,6 +57,11 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>io.github.classgraph</groupId>
+				<artifactId>classgraph</artifactId>
+				<version>4.8.139</version>
 			</dependency>
 
 		</dependencies>

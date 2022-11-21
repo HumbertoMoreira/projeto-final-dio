@@ -23,7 +23,7 @@ public class ClienteRestController {
         return ResponseEntity.ok(clienteService.buscarPorId(id));
     }
 
-    @GetMapping("/{email}")
+    @GetMapping("/email/{email}")
     public  ResponseEntity<Cliente> buscarPorEmail(@PathVariable String email){
         return ResponseEntity.ok(clienteService.buscarPorEmail(email));
     }
